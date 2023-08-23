@@ -1,5 +1,11 @@
-from flask import Flask
+from flask import Flask, request, jsonify
+from dataclasses import dataclass
 
+@dataclass
+class Result:
+    result: int
+
+from flask import Flask
 app = Flask(__name__)
 
 
